@@ -1,0 +1,103 @@
+.background {
+	background-color: lightblue;
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.backgroundImage {
+	padding-top: 50px;
+	max-width: 700px;
+	max-height: 700px;
+}
+
+.main {
+	width: 300px;
+	list-style: none;
+	padding: 10px;
+}
+
+.main .item {
+	padding: 10px;
+	margin: 5px;
+	width: 50px;
+}
+
+.triesLeft {
+	padding: 20px;
+	font-size: 25px;
+	padding-left: 20px;
+	color:green;
+}
+
+.triesLeft:before {
+	content: "TRIES:";
+	letter-spacing: normal;
+	font-size: 23px;
+	color: green;
+	padding-right: 20px;
+}
+
+.placeholder {
+	margin-top: 5px;
+	margin-left: 50px;
+	letter-spacing: 5px;
+	display: inline-flex;
+	position: absolute;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.placeholder:before {
+	content: "HANGMAN:";
+	letter-spacing: normal;
+	font-size: 23px;
+	color: brown;
+	padding-right: 20px;
+	margin-top: -3px;
+}
+
+.wrongLetter {
+	background-color: red;
+}
+
+.goodLetter {
+	background-color: green;
+}
+
+
+.replay {
+	background-color: pink; 
+	border:2px solid brown;
+	line-height: 25px;
+	color: black;
+	width: 100px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0,0,0,0.7);
+}
+
+
+.popover-item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: yellow;
+	font-size:30px;
+}
